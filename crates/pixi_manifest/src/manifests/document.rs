@@ -650,7 +650,7 @@ impl ManifestDocument {
 
         let env_table = TableName::new()
             .with_prefix(self.table_prefix())
-            .with_feature_name(Some(&FeatureName::DEFAULT))
+            .with_feature_name(Some(&FeatureName::Default))
             .with_table(Some("environments"));
 
         // Insert into the environment table
@@ -668,7 +668,7 @@ impl ManifestDocument {
     pub fn remove_environment(&mut self, name: &str) -> Result<bool, TomlError> {
         let env_table = TableName::new()
             .with_prefix(self.table_prefix())
-            .with_feature_name(Some(&FeatureName::DEFAULT))
+            .with_feature_name(Some(&FeatureName::Default))
             .with_table(Some("environments"));
 
         let item = self
