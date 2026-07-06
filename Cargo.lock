@@ -6901,6 +6901,7 @@ dependencies = [
  "toml_edit 0.23.10+spec-1.0.0",
  "tracing",
  "url",
+ "xxhash-rust",
  "zstd",
 ]
 
